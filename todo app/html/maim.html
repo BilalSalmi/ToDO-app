@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do App</title>
+
+    <!--css linking-->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bodydark">
+
+    <!--Main Section-->
+
+    <main class="main">
+         <!--Banner-->
+         <section class="banner"> </section>
+         <!--End Of Banner-->
+
+        <!--Container-->
+        <section class="container">
+            <!--Header-->
+           <header class="header">
+              <h1>TODO</h1>
+              <button  id="modebtn" class="mode fa-regular fa-sun" title="Choose your mode"></button>
+           </header>
+            <!--End Of Header-->
+
+            <!--input-wrapper-->
+           <div id="wrapper" class="input-wrapper">
+              <input type="text" name="" id="EnterTask" placeholder="Create a new todo..." class="to-do-input  create-to-do-task">
+              <div  id ="mark" class="checkbox" title="Mark as completed">
+                <span id="check"><!--class="fa-solid fa-check" --></span>
+              </div>
+           </div>
+           <!--End Of Input-Wrapper-->
+
+           <!--tasks-->
+
+           <div id ="taskdiv" class="tasks containerDart">
+            <!--task-->
+           
+            <!---->
+             
+           </div>
+
+
+           <!--footer-->
+           <footer id="filter" class="footer">
+            <span id="counter" class="items-counter"></span>
+            <button id="all">All</button>
+            <button id="active">Active</button>
+            <button id="completed">completed</button>
+            <button id="clear">clear All completed</button>
+           </footer>
+
+           
+            
+        </section>
+        <!--End Of Container-->
+
+    </main>
+
+    <!--End Of Main-->
+    
+    <!--Js Files-->
+    <script src="../js/app.js"></script>
+</body>
+</html>

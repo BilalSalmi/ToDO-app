@@ -1,0 +1,344 @@
+/*== Google Fonts == */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+/*== End Of Google fonts ==*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bodydark
+{
+    background-color: var(--bg-color);
+}
+
+.containerDart
+{
+    background-color: hsl(235, 24%, 19%);
+    box-shadow: 5px 50px 20px rgba(0, 0, 0, 0.055) !important;    
+}
+
+.light
+{
+    background-color: var(--light-color)  !important;
+}
+
+
+
+
+:root{
+    --dark-color:hsl(235, 21%, 11%);
+    --bg-color:hsl(240, 20%, 12%);
+    --dark-input:hsl(233, 26%, 19%);
+    --text-color:hsl(235, 12%, 58%);
+    --light-color:white;
+}
+
+/**** Banner ****/
+
+.banner
+{
+    width: 100%;
+    height: 200px;
+    background-image: url('../images/bg-desktop-dark.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/**** End Of Banner ****/
+
+
+/**** Container ****/
+
+.container
+{
+    width: 500px;
+    margin: auto;
+    margin-top: -155px;
+    /* background-color: antiquewhite; */
+    display: flex;
+    flex-direction: column;
+    /* gap: 15px; */
+}
+
+
+/**** End Of Container ****/
+
+
+/**** Header ****/
+
+.header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header > h1
+{
+    width: fit-content;
+    color: #fff;
+    font-family: 'Josefin Sans';
+    font-weight: 700;
+    letter-spacing: 7px;
+    font-size: 30px;
+
+}
+
+.header > button
+{
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+}
+
+
+/* <i class="fa-solid fa-check"></i> */
+
+/**** to-do-input ****/
+.input-wrapper
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkbox
+{
+    position: absolute;
+    left: 15px;
+    color:#fff;
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    background:transparent;
+    border: 1px solid rgb(230, 230, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox > span
+{
+    font-size: 10px;
+}
+
+.checked
+{
+    color:#fff;
+    font-size: 10px;
+}
+
+.text-completed
+{
+    text-decoration: line-through;
+}
+
+.checkbox-checked
+{
+    background-image: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+
+.checkbox-active
+{
+    background-image: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+.to-do-input
+{
+    
+    background-color: var(--dark-input);
+    border-radius: 5px;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    padding:15px 5px 15px 50px;
+    color: var(--text-color);
+    position: relative;
+}
+
+.to-do-task
+{
+    
+    background-color:transparent;
+    border-radius: 5px;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    padding:15px 5px 15px 50px;
+    color: var(--text-color);
+    position: relative;
+}
+
+.to-do-input::placeholder
+{
+    color:hsl(237, 10%, 45%);
+    font-family: 'Josefin Sans';
+}
+
+.to-do-task::placeholder
+{
+    color:hsl(237, 10%, 45%);
+    font-family: 'Josefin Sans';
+}
+
+/**** End of to-do-input ****/
+
+/**** task ****/
+.tasks
+{
+    box-shadow: 5px 50px 20px rgb(190 190 190 / 64%);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+
+.task
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.task .to-do-task
+{
+    border-radius: 0;
+    border-bottom: 1px solid hsla(237, 10%, 45%, 0.315);;
+}
+
+.operation
+{
+    position:absolute;
+    right: 0;
+    width: max-content;
+    display: flex;
+    justify-content:space-between;
+    margin-right: 5px;
+    align-items: center;
+    overflow: hidden;
+    gap: 5px;
+
+}
+
+.edit
+{
+    padding: 5px;
+    display: block;
+    color: rgb(163, 163, 2);
+    /* color: #000; */
+    outline: none;
+    border: none;
+    width: 45px;
+    border-radius: 5px;
+    background: transparent;
+}
+
+.delete
+{
+    padding: 5px;
+    display: block;
+    color: rgb(212, 0, 0);
+    /* color: #000; */
+    outline: none;
+    border: none;
+    width: 45px;
+    border-radius: 5px;
+    background: transparent;
+}
+
+
+
+
+/**** End Of header ****/
+
+
+/**** footer ****/
+
+.footer
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background-color: var(--dark-input);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.footer-light
+{
+    background-color: #fff !important;
+}
+
+.footer > button
+{
+    border: none;
+    outline: none;
+    background: transparent;
+    color:hsl(237, 10%, 45%);
+    font-family: 'Josefin Sans';
+    font-size: 15px;
+    padding: 15px 5px 10px 5px;
+    transition: color .2s ease-in-out;
+}
+
+.footer > button:hover
+{
+    color: #fff;
+}
+
+.footer-light > button:hover
+{
+    color:hsl(235, 21%, 11%) !important;
+}
+
+.items-counter
+{
+    color:hsl(237, 10%, 45%);
+}
+
+.active-btn
+{
+    color:hsl(220, 79%, 72%) !important;
+}
+
+
+/*********** media queries ***********/
+
+@media only screen and (max-width:600px) {
+    .container
+    {
+        width: 400px;
+    }   
+    
+    .footer > button
+{
+    border: none;
+    outline: none;
+    background: transparent;
+    color:hsl(237, 10%, 45%);
+    font-family: 'Josefin Sans';
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 15px 5px 10px 5px;
+    transition: color .2s ease-in-out;
+}
+
+.items-counter
+{
+    font-size: 10px;
+    color:hsl(237, 10%, 45%);
+}
+}
+
+
